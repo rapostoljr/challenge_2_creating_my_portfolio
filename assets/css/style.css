@@ -1,18 +1,19 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+:root {
+    --background-color: #7f7f7f;
+    --text-color: white;
+    --header-bg-color: #13b3cc;
 }
 
 body {
-    background-color: #7f7f7f;
+    margin: 0;
+    background-color: var(--background-color);
 }
 
 header {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #13b3cc;
-    color: #ffffff;
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
 }
 
 h1 {
@@ -35,4 +36,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-left: 25px;
+}
+
+.headshot {
+    height: 290px;
+    width: 20%;
+    background-image: url("../images/headshot.jpg");
+    background-size: cover;
+    background-position: center;
 }
