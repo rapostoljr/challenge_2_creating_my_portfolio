@@ -63,6 +63,40 @@ main article {
     padding-left: 50px;
 }
 
-article > a {
+#resume p, #my-works p, #about-me p, #contact-me ul {
     padding-left: 200px;
 }
+
+#my-works a {
+    display:inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#my-works img:hover, #resume img:hover {
+    transform: scale(1.25);
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+/* @media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  } */
